@@ -14,16 +14,16 @@
             android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="parent" android:textAlignment="textEnd"
             android:textSize="90sp"/>
     <Button
-            android:text="C"
+            android:text="@string/btnClear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:stateListAnimator="@null"
             android:id="@+id/btnClear" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/btnMaisOuMenos"
             android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/txvResultado"
-            android:background="@drawable/botao" android:textSize="55sp"/>
+            android:background="@drawable/botao" android:textSize="55sp" android:contentDescription="@string/btnClear"/>
     <Button
-            android:text="+/-"
+            android:text="@string/btnMaisOuMenos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:stateListAnimator="@null"
@@ -31,9 +31,9 @@
             app:layout_constraintStart_toEndOf="@+id/btnClear" app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toStartOf="@+id/btnPorCento" android:layout_marginTop="30dp"
             app:layout_constraintTop_toBottomOf="@+id/txvResultado" android:background="@drawable/botao"
-            android:textSize="55sp"/>
+            android:textSize="55sp" android:contentDescription="@string/btnMaisOuMenos"/>
     <Button
-            android:text="%"
+            android:text="@string/btnPorCento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:stateListAnimator="@null"
@@ -41,9 +41,9 @@
             app:layout_constraintStart_toEndOf="@+id/btnMaisOuMenos" app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toStartOf="@+id/btnDiv" android:layout_marginTop="30dp"
             app:layout_constraintTop_toBottomOf="@+id/txvResultado" android:background="@drawable/botao"
-            android:textSize="55sp"/>
+            android:textSize="55sp" android:contentDescription="@string/btnMaisOuMenos"/>
     <Button
-            android:text="/"
+            android:text="@string/btnDiv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:stateListAnimator="@null"
@@ -51,134 +51,38 @@
             app:layout_constraintStart_toEndOf="@+id/btnPorCento" app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="30dp"
             app:layout_constraintTop_toBottomOf="@+id/txvResultado" android:background="@drawable/botao"
-            android:textSize="55sp"/>
+            android:textSize="55sp" android:contentDescription="@string/btnDiv"/>
     <Button
-            android:text="7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:stateListAnimator="@null"
-            android:id="@+id/btnSeven"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/btnEight" android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnClear" android:background="@drawable/botao"
-            android:textSize="55sp"/>
-    <Button
-            android:text="8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:stateListAnimator="@null"
-            android:id="@+id/btnEight"
-            app:layout_constraintStart_toEndOf="@+id/btnSeven" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/btnNine" android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnMaisOuMenos" android:background="@drawable/botao"
-            android:textSize="55sp"/>
-    <Button
-            android:text="9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:stateListAnimator="@null"
-            android:id="@+id/btnNine"
-            app:layout_constraintStart_toEndOf="@+id/btnEight" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/btnMulti" android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnPorCento" android:background="@drawable/botao"
-            android:textSize="55sp"/>
-    <Button
-            android:text="X"
+            android:text="@string/btnMulti"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:stateListAnimator="@null"
             android:id="@+id/btnMulti" app:layout_constraintStart_toEndOf="@+id/btnNine"
             app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btnDiv"
-            android:background="@drawable/botao" android:textSize="55sp"/>
+            android:background="@drawable/botao" android:textSize="55sp" android:contentDescription="@string/btnMulti"/>
     <Button
-            android:text="4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:stateListAnimator="@null"
-            android:id="@+id/btnFour"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/btnFive" android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnSeven" android:background="@drawable/botao"
-            android:textSize="55sp"/>
-    <Button
-            android:text="5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:stateListAnimator="@null"
-            android:id="@+id/btnFive"
-            app:layout_constraintStart_toEndOf="@+id/btnFour" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/btnSix" android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnEight" android:background="@drawable/botao"
-            android:textSize="55sp"/>
-    <Button
-            android:text="6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:stateListAnimator="@null"
-            android:id="@+id/btnSix" app:layout_constraintStart_toEndOf="@+id/btnFive"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/btnLess"
-            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btnNine"
-            android:background="@drawable/botao" android:textSize="55sp"/>
-    <Button
-            android:text="-"
+            android:text="@string/btnLess"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:stateListAnimator="@null"
             android:id="@+id/btnLess"
             app:layout_constraintStart_toEndOf="@+id/btnSix" app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toEndOf="parent" android:background="@drawable/botao" android:textSize="55sp"
-            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btnMulti"/>
+            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btnMulti"
+            android:contentDescription="@string/btnLess"/>
     <Button
-            android:text="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:stateListAnimator="@null"
-            android:id="@+id/btnOne"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/btnTwo" android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnFour" android:background="@drawable/botao"
-            android:textSize="55sp"/>
-    <Button
-            android:text="2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:stateListAnimator="@null"
-            android:id="@+id/btnTwo"
-            app:layout_constraintStart_toEndOf="@+id/btnOne" app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintEnd_toStartOf="@+id/btnThree" android:layout_marginTop="30dp"
-            app:layout_constraintTop_toBottomOf="@+id/btnFive" android:background="@drawable/botao"
-            android:textSize="55sp"/>
-    <Button
-            android:text="3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:stateListAnimator="@null"
-            android:id="@+id/btnThree" app:layout_constraintStart_toEndOf="@+id/btnTwo"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/btnPlus"
-            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btnSix"
-            android:background="@drawable/botao" android:textSize="55sp"/>
-    <Button
-            android:text="+"
+            android:text="@string/btnPlus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:stateListAnimator="@null"
             android:id="@+id/btnPlus"
             app:layout_constraintStart_toEndOf="@+id/btnThree" app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintEnd_toEndOf="parent" android:background="@drawable/botao" android:textSize="55sp"
-            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btnLess"/>
+            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btnLess"
+            android:contentDescription="@string/btnPlus"/>
     <Button
-            android:text="0"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:stateListAnimator="@null"
-            android:id="@+id/btnZero" app:layout_constraintStart_toStartOf="@+id/btnOne"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/btnComma"
-            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btnOne"
-            android:background="@drawable/botao" android:textSize="55sp" android:layout_marginBottom="30dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="8dp"/>
-    <Button
-            android:text=","
+            android:text="@string/btnComma"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:stateListAnimator="@null"
@@ -187,9 +91,9 @@
             app:layout_constraintEnd_toStartOf="@+id/btnEqual" android:layout_marginTop="30dp"
             app:layout_constraintTop_toBottomOf="@+id/btnTwo" android:background="@drawable/botao"
             android:textSize="55sp" android:layout_marginBottom="30dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:textAlignment="center"/>
+            android:textAlignment="center" android:contentDescription="@string/btnComma"/>
     <Button
-            android:text="="
+            android:text="@string/btnEqual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:stateListAnimator="@null"
@@ -198,5 +102,104 @@
             app:layout_constraintEnd_toEndOf="@+id/btnPlus" android:layout_marginTop="30dp"
             app:layout_constraintTop_toBottomOf="@+id/btnThree" android:background="@drawable/botao"
             android:textSize="55sp" android:layout_marginBottom="30dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginEnd="8dp"/>
+            android:layout_marginEnd="8dp" android:contentDescription="@string/btnEqual"/>
+    <Button
+            android:text="@string/btnNine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:id="@+id/btnNine"
+            app:layout_constraintStart_toEndOf="@+id/btnEight" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/btnMulti" android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnPorCento" android:background="@drawable/botao"
+            android:textSize="55sp" android:contentDescription="@string/btnNine"/>
+    <Button
+            android:text="@string/btnEight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:id="@+id/btnEight"
+            app:layout_constraintStart_toEndOf="@+id/btnSeven" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/btnNine" android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnMaisOuMenos" android:background="@drawable/botao"
+            android:textSize="55sp" android:contentDescription="@string/btnEight"/>
+    <Button
+            android:text="@string/btnSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:id="@+id/btnSeven"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/btnEight" android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnClear" android:background="@drawable/botao"
+            android:textSize="55sp" android:contentDescription="@string/btnSeven"/>
+    <Button
+            android:text="@string/btnSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:id="@+id/btnSix" app:layout_constraintStart_toEndOf="@+id/btnFive"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/btnLess"
+            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btnNine"
+            android:background="@drawable/botao" android:textSize="55sp" android:contentDescription="@string/btnSix"/>
+    <Button
+            android:text="@string/btnFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:id="@+id/btnFive"
+            app:layout_constraintStart_toEndOf="@+id/btnFour" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/btnSix" android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnEight" android:background="@drawable/botao"
+            android:textSize="55sp" android:contentDescription="@string/btnFive"/>
+    <Button
+            android:text="@string/btnFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:id="@+id/btnFour"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/btnFive" android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnSeven" android:background="@drawable/botao"
+            android:textSize="55sp" android:contentDescription="@string/btnFour"/>
+    <Button
+            android:text="@string/btnThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:id="@+id/btnThree" app:layout_constraintStart_toEndOf="@+id/btnTwo"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/btnPlus"
+            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btnSix"
+            android:background="@drawable/botao" android:textSize="55sp" android:contentDescription="@string/btnThree"/>
+    <Button
+            android:text="@string/btnTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:id="@+id/btnTwo"
+            app:layout_constraintStart_toEndOf="@+id/btnOne" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/btnThree" android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnFive" android:background="@drawable/botao"
+            android:textSize="55sp" android:contentDescription="@string/btnTwo"/>
+    <Button
+            android:text="@string/btnOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:id="@+id/btnOne"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/btnTwo" android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnFour" android:background="@drawable/botao"
+            android:textSize="55sp" android:contentDescription="@string/btnOne"/>
+    <Button
+            android:text="@string/btnZero"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:stateListAnimator="@null"
+            android:id="@+id/btnZero" app:layout_constraintStart_toStartOf="@+id/btnOne"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/btnComma"
+            android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/btnOne"
+            android:background="@drawable/botao" android:textSize="55sp" android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="8dp"
+            android:contentDescription="@string/btnZero"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
